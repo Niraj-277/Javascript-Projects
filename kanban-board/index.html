@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Kanban Board</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="search tasks...">
+            <button id="darkToggle">🌙</button>
+        </div>
+    </header>
+    <main class="board">
+        <div class="column" data-status="todo">
+            <h2>Todo</h2>
+            <div class="task-list"></div>
+            <button class="add-task">+ Add Task</button>
+        </div>
+        <div class="column" data-status="progress">
+            <h2>In Progress</h2>
+            <div class="task-list"></div>
+            <button class="add-task">+Add Task</button>
+        </div>
+        <div class="column" data-status="done">
+            <h2>Done</h2>
+            <div class="task-list"></div>
+            <button class="add-task">+Add Task</button>
+        </div>
+    </main>
+    <div></div>
+            <button class="down-button">+Add Task</button>
+    
+    <script src="js/state.js"></script>
+</body>
+</html>
